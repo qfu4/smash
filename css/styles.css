@@ -1,69 +1,105 @@
-body {
-	color: #000000;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-header{
-	grid-column: 1/4;
-	position: relative;
-}
-
+/*****************
+*** LAYOUT
+*****************/
 .container{
-	margin: 25px auto;
-	width: 90%;
+	margin: 0 auto;
+	width: 95%;
 	max-width: 960px;
-	display: grid;
-	grid-template-columns: 260px 1fr 200px;
 }
 
 
-
-h1 {
-    font-size: 34px;
+/*****************
+*** BASE
+*****************/
+p{
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	line-height:1.9em;
+	border-bottom:dotted 2px #bcbab8;
+	padding-bottom: 20px;
 }
 
-aside {
-    grid-column: 1/4;
-    align-self: end;
-    font-style: italic;
-    text-align: center;
+p::first-letter{
+	font-size: 70px;
+    float: left;
+    margin-top: 0.2em;
+    color:#9d8f8f;
+    margin-right:2px;
 }
 
-aside ul {
-    list-style-type: none;
-    margin-bottom: 5px;
+h1,h2{
+	font-family: 'Philosopher', sans-serif;
 }
 
-main{
-	grid-column: 1/4;
+h1{
+	font-size:45px;
+	text-align:center;
 }
 
-footer{
-	grid-column: 1/2;
-	font-weight: bold;
-}
-
-nav {
-	grid-column: 2/4;
-}
-
-
-
-
-h2 {
-	color: #0078FF;
-	font-weight: bold;
+h2{
+	font-size:35px;
+	color:#625757;
 }
 
 a {
-	color: #7D9C9F;
 	text-decoration: none;
 }
 
-a:hover {
-	color: #00E98A;
+
+/*****************
+*** MODULE
+*****************/
+.lead{
+	border-bottom: 2px dotted #bcbab8;
+	padding-top:20px;
+	margin-top:0px;
+
 }
-a:active {
-	color:#00FF97;
+.lead div{
+	font-size:16px;
+	font-family: 'Philosopher', sans-serif;
+	font-style: italic;
+	text-align:center;
 }
 
+.lead ul{
+	font-size:18px;
+
+	font-family: 'Philosopher',sans-serif;
+	list-style-type: none;
+	display:flex;
+	justify-content: center;
+	margin-right:40px;
+}
+
+.lead li{
+	padding:10px;
+}
+
+footer.copyright{
+	font-family: 'Philosopher', sans-serif;
+	text-align:center;
+	padding:10px;
+	background-color:#f9f9f9;
+}
+
+footer.source ul{
+	list-style-type: none;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer.source li{
+	border: 2px dotted #bcbab8;
+	border-radius: 10px;
+	margin-left:0px;
+	padding:10px;
+	margin-right:20px;
+}
+footer.source a{
+	color:#9d8f8f;
+}
+
+footer.source a:hover{
+	color:#f7d3ba;
+}
